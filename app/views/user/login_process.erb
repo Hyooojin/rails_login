@@ -1,0 +1,15 @@
+<h1>로그인 안됬어</h1>
+
+<!--0. 로그인
+0. 로그인으로 받아온 정보의 유저가 DB에 있는지 확인?
+params[:email]
+
+?User.find(@User.email)
+        if User.exists?(email: params[:email])
+            user = User.find_by(email: params[:email])
+            if user.password == params[:password]
+                session[:user_id] = user.id # 저장해두고 쓴다.
+            end
+        end
+1. 만약에 있다면, 비밀번호가 맞는지 확인?
+2. 그것도 만약에 맞다면, 로그인 시키기-->
